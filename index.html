@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body onload="onloadIndex()">
+  
+    <!-- header -->
+    <header>
+        <!-- carousel -->
+        <div id="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="http://sushikei.vn/wp-content/uploads/2019/07/banner_web-1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="http://sushikei.vn/wp-content/uploads/2020/02/Banner-website-.png" alt="Second slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- navbar -->
+              <nav class="navbar fixed-top" >
+                <div class="nav-links">
+                    <a href="index.html" class="nav-links scroll-link"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    <a href="menu.html" class="nav-links scroll-link">Thực đơn</a>
+                    <a href="order.html" class="nav-links scroll-link">Đặt bàn</a>
+                    <a href="login.html" id="login" class="nav-links scroll-link">Đăng nhập</a>
+                    <a href="register.html" id="register" class="nav-links scroll-link">Đăng ký</a>
+                    <a href="account.html" id="userName"  class="nav-links scroll-link">UserName</a>
+                    <a href="#" id="logout" class="nav-links scroll-link">Đăng xuất</a>
+                    <a href="myorder.html" id="order" class="nav-links scroll-link">Đơn đặt</a>
+                </div>
+                
+              </nav>
+        </div>
+    </header>
+    
+    <!-- end of header -->
+    <!-- about section -->
+    <div class="container">
+      <section class="section about">
+        <!-- about center -->
+        <div class="row" id="about-1">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <article class="about-info">
+              <h2>sushi kei</h2>
+              <h5>Nhà hàng ẩm thực Nhật Bản</h5>
+              <p>
+                Sushi Kei - từ Kei có nghĩa là niềm vui, niềm hạnh phúc trong tiếng Nhật. 
+                Sushi Kei gợi liên tưởng về cảm giác vui tươi, hào hứng và mong muốn tạo 
+                sự hài lòng cao nhất cho thực khách khi được thưởng thức các món ăn Nhật 
+                Bản tươi ngon, chọn lọc tại nhà hàng.
+              </p>
+              <p>
+                Điểm nhấn tại Sushi Kei chính là sashimi - món ăn “thật thà” nhất bởi 
+                những lát cắt tinh tế luôn giữ được nguyên hương vị đại dương mộc mạc,
+                 sử dụng từ những phần cá tươi ngon nhất, từng lát cá căng bóng mềm mọng, 
+                 ngọt đậm đà, vị mát lạnh và béo ngậy đặc trưng.
+              </p>
+            </article>
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <article id="about-img">
+              <img src="https://tinyurl.com/y42hhyq5" class="mw-100" alt="">
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <article id="about-img">
+              <img src="https://tinyurl.com/yydw5nge" class="mw-100" alt="">
+            </article>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <article id="about-info">
+              <h2>Chuyên gia ẩm thực</h2>
+              <h5>Chiba Kazuhio - Người đầu bếp tài hoa với 30 năm kinh nghiệm</h5>
+              <p>
+                Chuyên gia Chiba Kazuhiko luôn tâm niệm rằng: “Ăn ngon vì sức khỏe”. 
+                Chính vì thế tại Sushi Kei, cách chế biến món ăn luôn hạn chế sử dụng 
+                đường và không sử dụng các gia vị hóa học, chỉ chú trọng vào việc làm 
+                nổi bật sự tươi ngon, thuần khiết tự nhiên của thực phẩm.
+              </p>
+              <p>
+                Các món ăn của bếp trưởng Chiba chinh phục mọi giác quan bởi hương vị 
+                đậm chất Nhật Bản cùng cách bài trí tỉ mỉ, tinh tế và gói trọn cả tình 
+                yêu với nghề của người đầu bếp.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end about section -->
+    <!-- featured food -->
+    <div class="container-fluid">
+      <section class="section-featured">
+        <!-- title -->
+        <div class="title-wrapper">
+          <h2 class="title">Món ăn đặc sắc</h2>
+        </div>
+        <!-- end of title -->
+        <!-- teatured center -->
+        <div class="row">
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">sashimi tươi mát</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">sushi thơm mềm</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">tempura</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_8.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">lẩu đậm đà</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">món nướng </h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/08/menu_dac_sac.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">lươn cuộn trứng</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/08/vuông-1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">cơm cá hồi</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+          <!-- single card -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="http://sushikei.vn/wp-content/uploads/2019/07/menu_dac_sac_5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text">salad thanh ngọt</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of single card -->
+        </div>
+      </section>
+    </div>
+    <!-- end of featured food -->
+    <!-- space -->
+    <div class="container">
+      <section class="section-space">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <article class="space-info">
+              <h2>Không gian</h2>
+              <h5>Nhà hàng đầm ấm, đậm chất Nhật Bản</h5>
+              <p>
+                Không gian Sushi Kei kết hợp giữa truyền thống và hiện đại nhưng 
+                vẫn mang tới cho thực khách cảm giác đậm chất Nhật Bản. Từ những 
+                trang trí hoa văn tinh tế trên tường, trần nhà hàng đến thiết kế 
+                quầy bar, bếp lịch sự, Sushi Kei thực sự là một Nhật Bản thu nhỏ giữa đất Việt.
+              </p>
+              <p>
+                Trang trí tường cũng như bàn ghế với màu cam và xanh lá cây chủ đạo tạo sự gần gũi với thiên nhiên như trong văn hóa Nhật.
+
+                Nhà hàng Sushi Kei hứa hẹn là một trong những điểm đến lý tưởng cho thực khách muốn trải nghiệm và yêu ẩm thực Nhật Bản.
+              </p>
+            </article>
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <article id="space-img">
+              <img src="http://sushikei.vn/wp-content/uploads/2019/07/khong_gian_nha_hang-1.jpg" class="mw-100" alt="">
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end of space -->
+    <!-- footer -->
+    <section class="footer"></section>
+    <!-- end of footer -->
+    <script src="js/index.js"></script>
+    <script src="js/helper.js"></script>
+</body>
+</html>
+

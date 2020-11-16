@@ -1,0 +1,479 @@
+/* css variables */
+:root {
+  --primaryColor: #bd8e2e;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.25rem;
+  --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body */
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--mainBlack);
+  background-image: url("https://tinyurl.com/y25n2ysb");
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+/************************* flobal styles **********************/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/************************* navbar **********************/
+#carousel {
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: -40rem;
+  width: 100%;
+  height: 4rem;
+  backdrop-filter: brightness(90%);
+}
+.scroll-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+}
+.scroll-link:hover {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+/*************************end of navbar **********************/
+/************************* about **********************/
+.about {
+  padding-top: 4rem;
+}
+#about-1 {
+  padding-bottom: 4rem;
+}
+.about-info {
+  background-color: var(--mainWhite);
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+.about-info h2,
+h5 {
+  text-transform: uppercase;
+}
+.about-info h2 {
+  color: var(--primaryColor);
+}
+.about-info {
+  padding: 2rem 2rem 1rem 2rem;
+}
+.about-info {
+  background-color: var(--mainWhite);
+}
+
+#about-info {
+  background-color: var(--mainWhite);
+}
+#about-img {
+  width: 100%;
+  height: auto;
+}
+#about-info h2,
+h5 {
+  text-transform: uppercase;
+}
+#about-info h2 {
+  color: var(--primaryColor);
+}
+#about-info {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+/************************* featured **********************/
+.section-featured {
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+}
+.title-wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  margin-bottom: 2rem;
+}
+.card {
+  margin-top: 0.5rem;
+  border: none !important;
+}
+.card-text {
+  text-transform: uppercase;
+  text-align: left;
+}
+#lblCartCount {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px; 
+}
+.card-body {
+  background-image: url("https://tinyurl.com/y25n2ysb");
+}
+/************************* end of featured **********************/
+/************************* space **********************/
+.section-space {
+  margin-top: 14rem;
+}
+.space-info {
+  background-color: var(--mainWhite);
+}
+
+.space-img {
+  width: 100%;
+  height: auto;
+}
+.space-info h2,
+h5 {
+  text-transform: uppercase;
+}
+.space-info h2 {
+  color: var(--primaryColor);
+}
+.space-info {
+  padding: 2rem 2rem 1rem 2rem;
+}
+.space-info {
+  background-color: var(--mainWhite);
+}
+/************************* end of space **********************/
+/************************* footer **********************/
+.footer {
+  margin-top: 2rem;
+  height: 3rem;
+  background-color: var(--mainBlack);
+}
+/************************* end of footer **********************/
+
+/************************* menu **********************/
+
+/************************* simple-menu **********************/
+
+.section-simple-menu {
+  margin-left: 4rem;
+  padding-top: 3rem;
+}
+#simple-menu {
+  color: var(--mainBlack);
+}
+.title-item-list {
+  cursor: pointer;
+  background-color: #b6872e;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 21px;
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.3rem solid #b6872e;
+  position: absolute;
+  top: 2.5rem;
+  left: 4.5rem;
+}
+.des-item-list {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  padding-left: 3rem;
+}
+.text-center {
+  text-align: center !important;
+  padding-right: 3rem;
+}
+.image-item-list {
+  width: 236px;
+  height: 44px;
+  padding-right: 5rem;
+}
+#buffet {
+  margin-left: 0.5rem;
+}
+#bangchuyen {
+  left: -1.8rem;
+}
+#lunch {
+  left: -0.5rem;
+}
+/************************* end of simple-menu **********************/
+/************************* order **********************/
+
+.container-fluid {
+  background-color: #dcc89f;
+  padding-bottom: 50px;
+}
+#order-info {
+  padding-left: 2rem;
+}
+.section-order {
+  margin-top: 2rem;
+}
+.order-info-span {
+  font-weight: bold;
+  color: var(--mainBlack);
+}
+.title-wrapper-order {
+  color: var(--mainBlack);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+.section-center-menu-detail{
+  text-align: left !important;
+}
+.order-img-picture {
+  border-radius: 2rem 2rem 2rem 2rem;
+  width: 290px;
+  height: 420px;
+}
+#order-image {
+  position: absolute;
+  left: 21rem;
+  top: 2rem;
+}
+/************************* end of order **********************/
+/************************* menu **********************/
+#menu {
+  margin-top: 3rem;
+  background-image: url("http://sushikei.vn/wp-content/themes/client/images/box4.png");
+  height: auto;
+  text-align: center;
+}
+.button-order{
+  width: 100%;
+}
+#title-menu {
+  padding-top: 2rem;
+  color: var(--mainWhite);
+}
+.title-box-menu {
+  background-color: var(--mainWhite);
+  font-size: 1.4rem;
+  text-align: center;
+  width: 80%;
+  border-radius: 2rem 2rem 2rem 2rem;
+  display: inline-block;
+}
+#demo {
+ justify-content: center;
+}
+@media screen and (max-width: 768px) {
+#menu-item {
+  font-size: 12px;
+}
+}
+.nav-links a {
+  float: left;
+}
+
+.cart-icon a{
+text-decoration: none;
+color: yellowgreen;
+font-size: 20px;
+}
+
+.cart-icon a:hover{
+  color: var(--primaryColor);
+  text-decoration: none;
+  }
+.nav-item {
+  float: left;
+}
+.nav-item-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu-img-single {
+  width: 6rem;
+  height: 6rem;
+}
+.section-center-menu h4,
+span {
+  color: var(--mainWhite);
+}
+hr.hr-menu {
+  border: 1px solid var(--mainWhite);
+}
+.seciton-menu-img {
+  display: flex;
+}
+.section-center-menu {
+  padding-top: 1rem;
+  flex: 1;
+}
+.section-center-price {
+  float: right;
+  /* position: absolute; 
+    top: 1rem;
+    right: 2rem; */
+  font-size: 1.5rem;
+  margin-top: -2rem;
+}
+/************************* end of menu **********************/
+
+/************************* order-html **********************/
+/************************* order-product **********************/
+.section-order-input {
+  background-color: rgb(252, 251, 250);
+}
+.section-order-product {
+  padding-top: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  background-color: var(--mainWhite);
+  padding-left: 2rem;
+  height: 40rem;
+}
+.order-product h2,
+p {
+  color: var(--mainBlack);
+}
+.order-submit {
+  background-color: #95a757;
+  color: var(--mainWhite);
+  border: 1px solid var(--mainTransition);
+  width: 7rem;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+}
+.button-changepass{
+  background-color: #95a757;
+  color: var(--mainWhite);
+  border: 1px solid var(--mainTransition);
+  width: 7rem;
+  font-size: 1.4rem;
+  width: auto;
+  border-radius: 0.4rem;
+}
+#detail-order {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+#date1 {
+  display: flex;
+}
+form {
+  text-align: center;
+}
+.price-detail {
+  color: var(--mainBlack);
+}
+.price-detail {
+  text-decoration: solid;
+  font-size: 1.2rem;
+  display: flex;
+}
+#btn-order {
+  width: 100%;
+}
+#menu-order {
+  background-image: url("http://sushikei.vn/wp-content/themes/client/images/box4.png");
+  height: auto;
+}
+.card {
+  margin-bottom: 2rem;
+}
+
+#cart {
+  position: absolute;
+  right: 4rem;
+  font-size: 2rem;
+}
+.card-img-top {
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--mainWhite) !important;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60% !important;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#shopping-cart {
+  background-color: var(--mainWhite);
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+}
+#section-menu-show {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+#cart-shopping {
+  width: 302px !important;
+  height: 402px !important;
+}
+.count,
+#sub {
+  color: var(--mainBlack);
+}
+#buttondelete {
+  font-size: 2rem;
+  background-color: #c3e6cb;
+  border: none;
+}
+#continue:link {
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+#continue{
+    font-weight: bold;
+}
+/************************* end of order-product **********************/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check-out</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body onload="show(); onloadIndex()">
+    
+    <!-- header -->
+    <header>
+        <!-- carousel -->
+        <div  id="carousel">
+            
+              <!-- navbar -->
+              <nav class="navbar fixed-top" >
+                <div class="nav-links">
+                    <a href="index.html" class="nav-links scroll-link"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    <a href="menu.html" class="nav-links scroll-link">Thực đơn</a>
+                    <a href="order.html" class="nav-links scroll-link">Đặt bàn</a>
+                    <a href="login.html" id="login" class="nav-links scroll-link">Đăng nhập</a>
+                    <a href="register.html" id="register" class="nav-links scroll-link">Đăng ký</a>
+                    <a href="account.html" id="userName" class="nav-links scroll-link">UserName</a>
+                    <a href="#" id="logout" class="nav-links scroll-link">Đăng xuất</a>
+                    <a href="myorder.html" id="order" class="nav-links scroll-link">Đơn đặt</a>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!-- end of header -->
+  
+  <!-- menu -->
+  <div class="container-fluid" id="menu">
+      <section class="section-menu">
+          <!-- title -->
+      <div class="title-wrapper" id="title-menu">
+        <h2 class="title">Giỏ hàng của bạn</h2>
+      </div>
+      <!-- end of title -->
+      <div class="table-responsive-sm">
+        <table class="table" name='tab'>
+            <thead>
+                <tr class="thead-dark">
+                    <th></th>
+                    <th><button class="btn btn-danger" onclick="cancle()">Huỷ đơn hàng</button></th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng</th>
+                    <th>Thao tác</th>
+                </tr>
+            </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+              <tfoot class="table-success">
+                  <tr id="tr"></tr>
+              </tfoot>
+          </table>
+        </div>
+      </section>
+      <button class="btn btn-primary" onclick="setCompletedOrder()">Đặt hàng</button>
+  </div>
+  <!-- end of menu -->
+ 
+    <!-- footer -->
+    <section class="footer"></section>
+    <!-- end of footer -->
+    <!-- modal -->
+    <script src="js/checkout.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
